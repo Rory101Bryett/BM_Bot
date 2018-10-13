@@ -9,7 +9,7 @@ import (
 func main() {
 	cfg := config.New()
 	cfg.LoadConfig("squadmin_bot.yml")
-	c := rcon.New(cfg.Rcon)
-	response := c.ExecuteCmd(&rcon.Broadcast{"Hello World"})
+	r := rcon.New(cfg.Rcon)
+	response := r.ExecuteCmd(&rcon.Broadcast{"Hello World"})
 	fmt.Print(response)
 }
