@@ -15,4 +15,7 @@ func main() {
 
 	discord.Start(cfg.Discord, r)
 
+	//bm := battlemetrics.New(cfg.BattleMetrics)
+	//bm.GetServerId()
+	//bm.FindPlayer()
 }
